@@ -1,0 +1,17 @@
+{
+  "name": "wespacker.co.uk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Wes Packer - personal site and blog",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

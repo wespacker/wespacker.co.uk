@@ -1,0 +1,6 @@
+---
+title: Pastures New...
+---
+It's finally time to say a fond farewell to my team for the last three years as I move on to professional pastures new.
+
+Seems like 2026 is becoming very much a game of two halves...
