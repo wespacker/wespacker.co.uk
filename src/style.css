@@ -32,4 +32,15 @@ h1 { line-height: 1.2; }
 .posts li { margin-bottom: 0.5rem; }
 .posts time { color: var(--muted); margin-right: 0.5rem; }
 
+.disciplines {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+.disciplines li { padding: 1rem; border: 1px solid #ddd; }
+.disciplines h3 { margin: 0 0 0.5rem; }
+.disciplines p { margin: 0; }
+
 footer { margin-top: 3rem; border-top: 1px solid #ddd; font-size: 0.9rem; }

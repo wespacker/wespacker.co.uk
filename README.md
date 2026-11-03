@@ -1,6 +1,6 @@
 # wespacker.co.uk
 
-Personal site and blog for Wes Packer. It's built with [Eleventy](https://www.11ty.dev/) and hosted on Cloudflare Pages.
+Personal site and blog for Wes Packer, built with Eleventy and hosted on Cloudflare Pages. The homepage features work across acting, writing, comedy, music, and Buddhist/spiritual practice. The site is static and uses no tracking, ads, or cookies.
 
 ## Local development
 
