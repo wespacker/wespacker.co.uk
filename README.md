@@ -1,9 +1,6 @@
 # wespacker.co.uk
 
-<<<<<<< HEAD
-A static, single-page personal portfolio for Wes Packer. Open `index.html` directly or serve the repository directory with any static web server. The site uses no JavaScript, external assets, cookies, or analytics.
-=======
-Personal site and blog for Wes Packer. It's built with [Eleventy](https://www.11ty.dev/) and hosted on Cloudflare Pages.
+Personal site and blog for Wes Packer, built with Eleventy and hosted on Cloudflare Pages. The homepage features work across acting, writing, comedy, music, and Buddhist/spiritual practice. The site is static and uses no tracking, ads, or cookies.
 
 ## Local development
 
@@ -40,4 +37,3 @@ Node 22 comes from `.nvmrc`. Security headers live in `src/_headers`.
 ## Never commit secrets
 
 Keys, `.env` files and similar are blocked in `.gitignore`. Put API tokens in Cloudflare's environment variables instead.
->>>>>>> origin/main
