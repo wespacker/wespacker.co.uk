@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and title != site.title %}{{ title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <a href="/" class="site-title">{{ site.title }}</a>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <p>No trackers, no ads, no cookies.</p>
+  </footer>
+</body>
+</html>

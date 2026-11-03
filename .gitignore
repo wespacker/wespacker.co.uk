@@ -1,0 +1,23 @@
+# Dependencies and build output
+node_modules/
+_site/
+
+# Secrets: never commit keys or env files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*_rsa
+*_ed25519
+.dev.vars
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
