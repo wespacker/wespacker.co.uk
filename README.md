@@ -1,6 +1,6 @@
 # wespacker.co.uk
 
-Personal site and blog for Wes Packer, built with Eleventy and hosted on Cloudflare Pages. The homepage features work across acting, writing, comedy, music, and Buddhist/spiritual practice. The site is static and uses no tracking, ads, or cookies.
+Website for Wes Packer's consultancy (private, open-source AI and automation for charities, the public sector and small businesses), with a blog and a personal "Beyond work" page. Built with Eleventy and deployed to Cloudflare Workers (static assets) via Workers Builds. The site is static and uses no tracking, ads, or cookies.
 
 ## Local development
 
@@ -21,14 +21,14 @@ title: My post title
 Post body here.
 ```
 
-The date comes from the filename. The post shows up on the homepage automatically.
+The date comes from the filename. The post shows up on /blog/ automatically.
 
-## Cloudflare Pages settings
+## Cloudflare Workers Builds settings
 
 | Setting                | Value           |
 | ---------------------- | --------------- |
-| Framework preset       | Eleventy        |
 | Build command          | `npm run build` |
+| Deploy command         | `npx wrangler deploy` |
 | Build output directory | `_site`         |
 | Production branch      | `main`          |
 

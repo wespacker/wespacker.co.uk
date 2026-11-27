@@ -1,24 +1,50 @@
 ---
 layout: base.njk
 ---
-<h1>{{ site.title }}</h1>
-<p class="lede">{{ site.description }}</p>
+<section class="hero">
+  <p class="eyebrow">{{ site.tagline }}</p>
+  <h1>Less admin, more mission.</h1>
+  <p class="lede">I set up affordable, private AI and automation for charities, the public sector and small businesses, so your people spend their time on the work that matters.</p>
+  <p><a class="button" href="mailto:{{ site.email }}?subject=Website%20enquiry">Get in touch</a></p>
+</section>
 
-<p>Actor, writer, comedian, drummer, rapper, and student of Buddhist practice. This is a home for the work, the ideas, and the practice behind it all.</p>
-<p>Privacy policy: I don't collect or retain any data at all. Ever.</p>
+<section aria-labelledby="who">
+  <h2 id="who">Who I work with</h2>
+  <ul class="cards">
+    <li><h3>Charities</h3><p>Small teams with big missions, where every hour spent on admin is an hour not spent on the cause.</p></li>
+    <li><h3>Public sector</h3><p>Services that need to stay private, accountable and affordable, without being tied to one supplier.</p></li>
+    <li><h3>Small businesses and sole traders</h3><p>People who want the benefits of AI and automation without enterprise prices or a steep learning curve.</p></li>
+  </ul>
+</section>
 
-<h2>What I do</h2>
-<ul class="disciplines">
-  <li><h3>Acting</h3><p>Character-led work built on curiosity, close listening, and finding the human detail.</p></li>
-  <li><h3>Writing</h3><p>Stories and words that look for the odd, tender, surprising angle on being alive.</p></li>
-  <li><h3>Comedy</h3><p>Playful, personal comedy — where the ridiculous and the recognisable meet.</p></li>
-  <li><h3>Music</h3><p>A drummer and rapper drawn to rhythm, live energy, and the feeling of a good groove.</p></li>
-  <li><h3>Buddhist &amp; spiritual practice</h3><p>Meeting life with attention, kindness, and a sense of humour.</p></li>
-</ul>
+<section aria-labelledby="services">
+  <h2 id="services">What I do</h2>
+  <ul class="cards cards--pairs">
+    <li><h3>Automate the admin</h3><p>Find the repetitive tasks that eat your week, such as forms, emails, data entry and reporting, and make them run on their own.</p></li>
+    <li><h3>Private AI</h3><p>Set up AI tools that keep sensitive information under your control, including options that run on your own equipment.</p></li>
+    <li><h3>Open-source alternatives</h3><p>Recommend and set up well-supported open-source tools that cut licence costs and keep your data portable.</p></li>
+    <li><h3>Training and handover</h3><p>Plain-English guidance and documentation, so your team owns what we build and isn't dependent on me.</p></li>
+  </ul>
+</section>
 
-<h2>Blog</h2>
-<ul class="posts">
-{%- for post in collections.posts | reverse %}
-  <li><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time> <a href="{{ post.url }}">{{ post.data.title }}</a></li>
-{%- endfor %}
-</ul>
+<section aria-labelledby="how">
+  <h2 id="how">How I work</h2>
+  <ul class="principles">
+    <li><strong>Private by default.</strong> Your data stays yours, and I only use what the job needs.</li>
+    <li><strong>No lock-in.</strong> Open standards and open-source tools wherever they fit, so you can walk away at any time.</li>
+    <li><strong>Affordable.</strong> The simplest thing that works, not the most expensive.</li>
+    <li><strong>Plain English.</strong> I bridge the gap between technical and non-technical people.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="about">
+  <h2 id="about">About me</h2>
+  <p>I'm Wes Packer. I've spent years in application management, automation and digital services, including work in local government. I enjoy making technology feel less intimidating and more useful, and helping people learn to look after it themselves.</p>
+  <p>There's more about me, including acting, comedy and music, on my <a href="/beyond-work/">beyond work</a> page.</p>
+</section>
+
+<section aria-labelledby="contact" class="contact">
+  <h2 id="contact">Let's talk</h2>
+  <p>Tell me what's taking up too much of your time. I'll tell you honestly whether I can help.</p>
+  <p><a class="button" href="mailto:{{ site.email }}?subject=Website%20enquiry">Email {{ site.email }}</a></p>
+</section>
