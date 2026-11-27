@@ -30,6 +30,8 @@ The date comes from the filename. The post shows up on /blog/ automatically.
 | Build command          | `npm run build` |
 | Deploy command         | `npx wrangler deploy` |
 | Build output directory | `_site`         |
+
+Worker settings (name, assets folder, 404 page, branch previews) live in `wrangler.jsonc`.
 | Production branch      | `main`          |
 
 Node 22 comes from `.nvmrc`. Security headers live in `src/_headers`.

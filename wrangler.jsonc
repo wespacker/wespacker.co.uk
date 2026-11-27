@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers config for the static site built by Eleventy.
+  // Deployed by Workers Builds: `npm run build`, then `npx wrangler deploy` on main
+  // and `npx wrangler preview` on other branches.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "wespacker--co-uk",
+  "compatibility_date": "2026-11-03",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page"
+  },
+  // Lets branch builds create preview URLs. Can stay empty.
+  "previews": {}
+}
