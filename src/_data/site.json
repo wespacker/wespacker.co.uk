@@ -1,5 +1,7 @@
 {
-  "title": "Wes Packer - Valley Fabulous",
-  "description": "Writings, musings, noodlings and doodlings...",
-  "url": "https://wespacker.co.uk"
+  "title": "Wes Packer",
+  "tagline": "Practical AI. Open source. No lock-in.",
+  "description": "Less admin, more mission. I set up affordable, private AI and automation for charities, the public sector and small businesses.",
+  "url": "https://wespacker.co.uk",
+  "email": "hello@wespacker.co.uk"
 }

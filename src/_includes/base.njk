@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if title and title != site.title %}{{ title }} · {% endif %}{{ site.title }}</title>
+  <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
     <a href="/" class="site-title">{{ site.title }}</a>
+    <nav aria-label="Main">
+      <a href="/#services">Services</a>
+      <a href="/#contact">Contact</a>
+      <a href="/blog/">Blog</a>
+      <a href="/beyond-work/">Beyond work</a>
+    </nav>
   </header>
   <main>
     {{ content | safe }}
   </main>
   <footer>
-    <p>No trackers, no ads, no cookies.</p>
+    <p>{{ site.tagline }}</p>
+    <p>This site has no trackers, ads or cookies, and collects no data.</p>
   </footer>
 </body>
 </html>
